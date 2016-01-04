@@ -3,6 +3,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
@@ -35,6 +36,8 @@ set backspace=indent,eol,start
 " Backup
 set backupdir=~/vimtmp/backup
 set directory=~/vimtmp/swap
+
+map <F4> :NERDTreeToggle<CR>
 
 nnoremap j gj
 nnoremap k gk
