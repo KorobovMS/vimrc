@@ -3,7 +3,9 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
@@ -19,11 +21,12 @@ set incsearch
 set ignorecase
 
 " GUI
-set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=DejaVu\ Sans\ Mono\ 11
 set guioptions-=m
 set guioptions-=T
 set guioptions+=b
-color desert
+set background=dark
+color solarized
 
 " Tabs
 set tabstop=4
