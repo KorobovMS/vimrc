@@ -1,15 +1,6 @@
-set nocompatible
-
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
-call vundle#end()
-filetype plugin indent on
-
 " Common
+set nocompatible
+filetype plugin indent on
 syntax on
 set encoding=utf-8
 set keymap=russian-jcukenwin
@@ -17,16 +8,14 @@ set iminsert=0
 set imsearch=-1
 set ruler
 set number
+set relativenumber
 set incsearch
-set ignorecase
-
-" GUI
-set guifont=DejaVu\ Sans\ Mono\ 11
-set guioptions-=m
-set guioptions-=T
-set guioptions+=b
+set backspace=indent,eol,start
 set background=dark
-color solarized
+set wildmenu
+set hidden
+set nobackup
+set directory=~/vimswap//
 
 " Tabs
 set tabstop=4
@@ -34,14 +23,6 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
-set backspace=indent,eol,start
 
-" Backup
-set backupdir=~/vimtmp/backup
-set directory=~/vimtmp/swap
-
-map <F4> :NERDTreeToggle<CR>
-
-nnoremap j gj
-nnoremap k gk
-
+" netrw
+let g:netrw_banner=0
