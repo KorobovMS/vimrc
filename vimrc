@@ -6,14 +6,18 @@ set encoding=utf-8
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=-1
+set incsearch
+set backspace=indent,eol,start
+set hidden
+
+" Appearance
 set ruler
 set number
 set relativenumber
-set incsearch
-set backspace=indent,eol,start
 set background=dark
 set wildmenu
-set hidden
+
+" Backup/swap
 set nobackup
 set directory=~/vimswap//
 
