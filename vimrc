@@ -10,6 +10,7 @@ set incsearch
 set ignorecase
 set backspace=indent,eol,start
 set hidden
+set linebreak
 
 " Appearance
 set ruler
