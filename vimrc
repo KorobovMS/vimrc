@@ -7,6 +7,7 @@ set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=-1
 set incsearch
+set ignorecase
 set backspace=indent,eol,start
 set hidden
 
