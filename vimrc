@@ -18,6 +18,7 @@ set number
 set relativenumber
 set background=dark
 set wildmenu
+set laststatus=2
 
 " Backup/swap
 set nobackup
