@@ -21,8 +21,8 @@ set wildmenu
 set laststatus=2
 
 " Backup/swap
+set noswapfile
 set nobackup
-set directory=~/vimswap//
 
 " Tabs
 set tabstop=4
