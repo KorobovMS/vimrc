@@ -11,6 +11,8 @@ set ignorecase
 set backspace=indent,eol,start
 set hidden
 set linebreak
+set breakindent
+set breakindentopt=shift:4
 
 " Appearance
 set ruler
