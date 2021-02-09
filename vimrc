@@ -24,6 +24,8 @@ set laststatus=2
 if has('mouse')
     set mouse=a
 endif
+set ttimeout
+set ttimeoutlen=100
 
 " Backup/swap
 set noswapfile
