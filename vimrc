@@ -21,6 +21,9 @@ set relativenumber
 set background=dark
 set wildmenu
 set laststatus=2
+if has('mouse')
+    set mouse=a
+endif
 
 " Backup/swap
 set noswapfile
