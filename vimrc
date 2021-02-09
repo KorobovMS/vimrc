@@ -40,3 +40,7 @@ set autoindent
 
 " netrw
 let g:netrw_banner=0
+
+" Commands
+command! ToCrLf %s/\([^<C-M>]\)$/\1\<C-M>/g
+command! ToLf %s/<C-M>$//g
