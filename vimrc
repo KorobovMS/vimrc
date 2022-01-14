@@ -24,6 +24,9 @@ set laststatus=2
 if has('mouse')
     set mouse=a
 endif
+set cursorline
+set cursorlineopt=line
+hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE
 set ttimeout
 set ttimeoutlen=100
 
