@@ -44,3 +44,13 @@ set autoindent
 " Commands
 command! ToCrLf %s/\([^<C-M>]\)$/\1\<C-M>/g
 command! ToLf %s/<C-M>$//g
+
+" Mappings
+let mapleader = " "
+nnoremap <silent> <F4> :Rexplore<CR>
+nnoremap <C-]> :tjump <C-R><C-W><CR>
+nnoremap <C-W>} :ptjump <C-R><C-W><CR>
+
+vnoremap <Leader>y "+y
+vnoremap <Leader>p "+p
+vnoremap <Leader>d "+d
