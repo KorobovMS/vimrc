@@ -8,6 +8,7 @@ set iminsert=0
 set imsearch=-1
 set incsearch
 set ignorecase
+set nohlsearch
 set backspace=indent,eol,start
 set hidden
 set linebreak
@@ -24,9 +25,13 @@ set laststatus=2
 if has('mouse')
     set mouse=a
 endif
+set splitright
+set splitbelow
+
+" colorscheme darkblue
 set cursorline
 set cursorlineopt=line
-hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE
+" hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE
 set ttimeout
 set ttimeoutlen=100
 
@@ -54,3 +59,6 @@ nnoremap <C-W>} :ptjump <C-R><C-W><CR>
 vnoremap <Leader>y "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>d "+d
+
+inoremap <C-L> <C-^>
+cnoremap <C-L> <C-^>
