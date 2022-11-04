@@ -60,5 +60,7 @@ vnoremap <Leader>y "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>d "+d
 
+nnoremap Y y$
+
 inoremap <C-L> <C-^>
 cnoremap <C-L> <C-^>
