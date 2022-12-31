@@ -64,3 +64,20 @@ nnoremap Y y$
 
 inoremap <C-L> <C-^>
 cnoremap <C-L> <C-^>
+
+function! Dmenu(action, alt, prompt)
+    let syscmd = a:alt . " | dmenu -l 20 -i -p \"" . a:prompt . "\""
+    let syscmdres = system(l:syscmd)
+    execute a:action . " " . l:syscmdres
+endfunction
+
+function! Buffers()
+    let bufs = range(1, bufnr('$'))
+    call filter(bufs, 'buflisted(v:val)')
+    let names = map(bufs, 'bufname(v:val)')
+    return join(names, '\n')
+endfunction
+
+nnoremap <Leader>f :call Dmenu("e", "find .", "open")<CR>
+nnoremap <Leader>g :call Dmenu("e", "git ls-files", "open")<CR>
+nnoremap <Leader>b :call Dmenu("e", "echo -ne \"" . Buffers() . "\"", "buffer")<CR>
