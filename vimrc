@@ -79,5 +79,7 @@ function! Buffers()
 endfunction
 
 nnoremap <Leader>f :call Dmenu("e", "find .", "open")<CR>
-nnoremap <Leader>g :call Dmenu("e", "git ls-files", "open")<CR>
+nnoremap <Leader>gl :call Dmenu("e", "git ls-files", "open")<CR>
 nnoremap <Leader>b :call Dmenu("e", "echo -ne \"" . Buffers() . "\"", "buffer")<CR>
+
+nnoremap <Leader>gr :grep  -RI .<Left><Left><Left><Left><Left><Left>
