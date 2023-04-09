@@ -28,7 +28,7 @@ endif
 set splitright
 set splitbelow
 
-" colorscheme darkblue
+colorscheme evening
 set cursorline
 set cursorlineopt=line
 " hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE
