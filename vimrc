@@ -65,6 +65,8 @@ nnoremap Y y$
 inoremap <C-L> <C-^>
 cnoremap <C-L> <C-^>
 
+cmap w!! w !sudo tee > /dev/null %
+
 function! Dmenu(action, alt, prompt)
     let syscmd = a:alt . " | dmenu -l 20 -i -p \"" . a:prompt . "\""
     let syscmdres = system(l:syscmd)
