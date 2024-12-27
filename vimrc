@@ -82,3 +82,5 @@ nnoremap <silent> <Leader>b :call fzf#run({'source': Buffers(), 'sink': 'b'})<CR
 nnoremap <Leader>gr :grep  -RI .<Left><Left><Left><Left><Left><Left>
 
 nnoremap <Leader>s :let x = job_start('sh', { 'in_io': 'buffer', 'in_buf': bufnr('%'), 'out_io': 'buffer', 'out_buf': bufnr('%')})<CR>
+
+nnoremap Q <nop>
