@@ -73,6 +73,9 @@ function! Buffers()
     return map(bufs, 'bufname(v:val)')
 endfunction
 
+vnoremap <silent> <Leader>yt :w !tmux load-buffer -<CR><CR>
+vnoremap <silent> <Leader>yx :w !xclip<CR><CR>
+vnoremap <silent> <Leader>yw :w !wl-copy<CR><CR>
 nnoremap <silent> <Leader>f :FZF<CR>
 nnoremap <silent> <Leader>b :call fzf#run({'source': Buffers(), 'sink': 'b'})<CR>
 
