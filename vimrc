@@ -23,7 +23,7 @@ set background=dark
 set wildmenu
 set laststatus=2
 if has('mouse')
-    set mouse=a
+    set mouse=nvi
 endif
 set splitright
 set splitbelow
